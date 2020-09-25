@@ -17,7 +17,7 @@ NETWORK="                                                           \
 
 qemu-system-x86_64 \
     -enable-kvm \
-    -m 4G \
+    -m 8G \
     -machine q35,accel=kvm \
     -smp 4,cores=4 \
     -cpu Penryn,vendor=GenuineIntel,kvm=on,+sse3,+sse4.2,+aes,+xsave,+avx,+xsaveopt,+xsavec,+xgetbv1,+avx2,+bmi2,+smep,+bmi1,+fma,+movbe,+invtsc \
