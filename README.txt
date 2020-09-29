@@ -9,11 +9,13 @@ sudo usermod -aG kvm $(whoami) # && reboot
 systemctl stop virtualbox.service 
 
 
-./jumpstart --catalina
+./jumpstart.sh --catalina
+
+qemu-img create -f qcow2 ~/KvmMachines/MacOsKvmSystemDisk/SystemDisk.qcow2 128G
 
 ./basic.sh
 
-# 1/ format the 64GB disk in disk utility
+# 1/ format the 128G disk in disk utility
 
 # 2/ install MacOS
 
